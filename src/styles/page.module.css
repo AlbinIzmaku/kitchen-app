@@ -1,0 +1,56 @@
+.main {
+  color: #fff;
+}
+.chefHat {
+  position: absolute;
+  width: 209px;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.getCooking {
+  position: absolute;
+  width: 275px;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.getCooking h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+.button {
+  position: absolute;
+  width: 243px;
+  height: 54px;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+
+  background-color: #129575;
+  border-radius: 10px;
+  border: none;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
