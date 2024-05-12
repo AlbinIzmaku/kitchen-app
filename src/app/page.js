@@ -3,6 +3,7 @@ import backgroundImage from "/public/backgroundImage.png";
 import hatImage from "/public/hatImage.png";
 import rightArrow from "/public/rightArrow.svg";
 import styles from "@/styles/page.module.css";
+import Button from "@/components/button";
 
 export default function Home() {
   return (
@@ -25,10 +26,11 @@ export default function Home() {
         <h1>Get Cooking</h1>
         <p>Simple way to find Tasty recipe</p>
       </div>
-      <button className={styles.button} aria-label="Next">
-        Start Cooking
-        <Image src={rightArrow} alt="Arrow" />
-      </button>
+      <div className={styles.buttonClass}>
+        <Button>
+          Start Cooking <Image src={rightArrow} alt="Arrow" />
+        </Button>
+      </div>
     </main>
   );
 }

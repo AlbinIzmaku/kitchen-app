@@ -32,25 +32,11 @@
   line-height: 120%;
   margin-bottom: 10px;
 }
-.button {
+.buttonClass {
   position: absolute;
   width: 243px;
   height: 54px;
   bottom: 20px;
   left: 50%;
   transform: translate(-50%);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 9px;
-
-  background-color: #129575;
-  border-radius: 10px;
-  border: none;
-
-  font-size: 16px;
-  font-weight: 600;
-  color: white;
-  cursor: pointer;
 }

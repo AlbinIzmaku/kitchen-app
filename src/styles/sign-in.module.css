@@ -1,0 +1,37 @@
+.main {
+  border: 1px solid black;
+  width: 90%;
+  margin: 20px auto;
+}
+.hello {
+  width: 155px;
+  height: 75px;
+}
+.hello h1 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  color: #000;
+}
+.hello h3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #121212;
+}
+.form {
+  border: 1px solid red;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 15px;
+}
+.form a {
+  font-weight: 400;
+  font-size: 11px;
+  color: #ff9c00;
+  text-decoration: none;
+}
+
