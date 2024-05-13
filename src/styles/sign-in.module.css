@@ -1,9 +1,11 @@
 .main {
-  border: 1px solid black;
   width: 90%;
-  margin: 20px auto;
+  margin: auto;
+  display: grid;
+  gap: 40px;
 }
 .hello {
+  margin-top: 30px;
   width: 155px;
   height: 75px;
 }
@@ -20,18 +22,44 @@
   color: #121212;
 }
 .form {
-  border: 1px solid red;
+  display: grid;
+  gap: 20px;
 }
 .inputContainer {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  margin-top: 15px;
 }
 .form a {
   font-weight: 400;
-  font-size: 11px;
+  font-size: 13px;
   color: #ff9c00;
   text-decoration: none;
 }
-
+.sideways {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+.sideways span {
+  background-color: #fff;
+  padding: 0 10px;
+  font-size: 13px;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  margin: auto;
+}
+.signUp {
+  text-align: center;
+  font-size: 14px;
+}
+.signUp a {
+  text-decoration: none;
+  color: #ff9c00;
+}

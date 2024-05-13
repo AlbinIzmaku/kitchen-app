@@ -7,6 +7,7 @@ import Input from "@/components/input";
 import Label from "@/components/label";
 import Button from "@/components/button";
 import rightArrow from "/public/rightArrow.svg";
+import SocialIcon from "@/components/socialIcon";
 
 export default function SignIn() {
   return (
@@ -25,24 +26,30 @@ export default function SignIn() {
           <Input type="password" placeholder="Enter Password" />
         </div>
         <Link href="/">Forgot Password?</Link>
-        <br />
         <Button>
-          Sign In <Image src={rightArrow} alt="Arrow"></Image>{" "}
+          Sign In <Image src={rightArrow} alt="Arrow"></Image>
         </Button>
       </form>
-      <div>
-        <p>Or Sign in With</p>
+      <p className={styles.sideways}>
+        <span>Or Sign in With</span>
+      </p>
+      <div className={styles.icons}>
+        <SocialIcon>
+          <Link href="/">
+            <Image src={googleIcon} alt="Google Icon" />
+          </Link>
+        </SocialIcon>
+        <SocialIcon>
+          <Link href="/">
+            <Image src={facebookIcon} alt="Facebook Icon" />
+          </Link>
+        </SocialIcon>
       </div>
-
-      {/* <div>
-        <Image src={googleIcon} alt="Google Icon" />
-        <Image src={facebookIcon} alt="Facebook Icon" />
-      </div>
-      <div>
+      <div className={styles.signUp}>
         <p>
-          Do not have an account? <Link href="">Sign up</Link>
+          Do not have an account? <Link href="/">Sign up</Link>
         </p>
-      </div> */}
+      </div>
     </main>
   );
 }
