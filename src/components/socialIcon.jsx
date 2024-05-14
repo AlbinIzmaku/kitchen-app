@@ -1,4 +1,4 @@
-import styles from '@/styles/socialIcon.module.css'
+import styles from '@/styles/social-icon.module.css'
 
 export default function SocialIcon({children}) {
   return (

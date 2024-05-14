@@ -48,7 +48,7 @@ h6 {
 }
 
 /* Text Style/Smaller Text/Semi Bold */
-p {
+p, label {
   font-size: 0.6875rem;
   line-height: 1rem;
 }
@@ -88,4 +88,6 @@ p {
   --warning-80: #ffe1e7;
 
   --success: #31b057;
+
+  --label: font-size: 1rem;
 }
