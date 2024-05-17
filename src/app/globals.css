@@ -5,7 +5,7 @@
 }
 html {
   font-size: 16px;
-  color: #121212;
+  color: #000;
 }
 /* Typography */
 
@@ -14,36 +14,42 @@ html {
 /* Text Style/Tittle Text/Bold */
 h1 {
   font-size: 3.125rem;
+  font-weight: 600;
   line-height: 4.6875rem;
 }
 
 /* Text Style/Header Text/Bold */
 h2 {
   font-size: 1.875rem;
+  font-weight: 600;
   line-height: 2.8125rem;
 }
 
 /* Text Style/Large Text/Bold */
 h3 {
   font-size: 1.25rem;
+  font-weight: 600;
   line-height: 1.875rem;
 }
 
 /* Text Style/Medium Text/Bold */
 h4 {
   font-size: 1.125rem;
+  font-weight: 600;
   line-height: 1.6875rem;
 }
 
 /* Text Style/Normal Text/Bold */
 h5 {
   font-size: 1rem;
+  font-weight: 600;
   line-height: 1.5rem;
 }
 
 /* Text Style/Small Text/Bold */
 h6 {
   font-size: 0.875rem;
+  font-weight: 600;
   line-height: 1.3125rem;
 }
 
@@ -51,14 +57,11 @@ h6 {
 p, label {
   font-size: 0.6875rem;
   line-height: 1rem;
+  font-weight: 400;
 }
 
 .regular {
   font-weight: 400;
-}
-
-.bold {
-  font-weight: 600;
 }
 
 /* Colors */

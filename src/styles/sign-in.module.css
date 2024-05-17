@@ -1,65 +1,43 @@
 .main {
-  width: 90%;
+  width: 85%;
   margin: auto;
   display: grid;
-  gap: 40px;
+  gap: 3rem;
 }
 .hello {
-  margin-top: 30px;
-  width: 155px;
-  height: 75px;
-}
-.hello h1 {
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 45px;
-  color: #000;
-}
-.hello h3 {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  color: #121212;
+  margin-top: 3.125rem;
 }
 .form {
   display: grid;
-  gap: 20px;
-}
-.inputContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+  gap: 1rem;
 }
 .form a {
+  font-size: 11px;
   font-weight: 400;
-  font-size: 13px;
-  color: #ff9c00;
+  color: var(--secondary-80);
   text-decoration: none;
 }
 .sideways {
   width: 100%;
   text-align: center;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--black);
   line-height: 0.1em;
-  margin: 10px 0 20px;
 }
 .sideways span {
-  background-color: #fff;
+  background-color: var(--white);
   padding: 0 10px;
   font-size: 13px;
 }
 .icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 130px;
-  margin: auto;
+  gap: 1.5rem;
 }
-.signUp {
+.info {
   text-align: center;
-  font-size: 14px;
 }
-.signUp a {
+.info a {
+  color: var(--secondary-100);
   text-decoration: none;
-  color: #ff9c00;
 }

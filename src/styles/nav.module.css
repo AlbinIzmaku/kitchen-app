@@ -1,0 +1,12 @@
+.nav {
+  position: relative;
+  border: 1px solid red;
+  z-index: -1;
+}
+.nav > * {
+  position: absolute;
+  display: flex;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}

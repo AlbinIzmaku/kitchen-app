@@ -27,9 +27,7 @@ export default function Home() {
         <p>Simple way to find Tasty recipe</p>
       </div>
       <div className={styles.buttonClass}>
-        <Button>
-          Start Cooking <Image src={rightArrow} alt="Arrow" />
-        </Button>
+        <Button>Start Cooking</Button>
       </div>
     </main>
   );

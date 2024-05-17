@@ -19,7 +19,7 @@ export default function SignUp() {
       <form className={styles.form}>
         <div>
           <label>Name</label>
-          <Input type="text" placeholder="Enter Name"  />
+          <Input type="text" placeholder="Enter Name" />
         </div>
         <div>
           <label>Email</label>
@@ -46,7 +46,7 @@ export default function SignUp() {
         <GoogleIcon />
         <FacebookIcon />
       </div>
-      <p style={{textAlign: 'center', marginBottom: '10px'}}>
+      <p className={styles.info}>
         Already a member? <Link href="/">Sign In</Link>
       </p>
     </main>

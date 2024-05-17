@@ -9,7 +9,7 @@
 }
 .form {
   display: grid;
-  gap: 1.25rem;
+  gap: 1rem;
 }
 .form .terms {
   color: var(--secondary-100);
@@ -22,11 +22,11 @@
 .sideways {
   width: 100%;
   text-align: center;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--black);
   line-height: 0.1em;
 }
 .sideways span {
-  background-color: #fff;
+  background-color: var(--white);
   padding: 0 10px;
   font-size: 13px;
 }
@@ -35,4 +35,11 @@
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+}
+.info {
+  text-align: center;
+}
+.info a {
+  color: var(--secondary-100);
+  text-decoration: none;
 }
