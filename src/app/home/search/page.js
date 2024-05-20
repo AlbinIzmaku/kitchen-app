@@ -2,10 +2,8 @@ import LeftArrow from "@/svg/leftArrow";
 import styles from "@/styles/search.module.css";
 import TwistButton from "@/components/twistButton";
 import Search from "@/components/search";
-import Image from "next/image";
-import searchImage from "/public/searchImage.png";
-import StarIcon from "@/svg/starIcon";
 import SearchCard from "@/components/searchCard";
+import search from "@/data/search";
 
 export default function SearchPage() {
   return (
@@ -18,12 +16,31 @@ export default function SearchPage() {
         <Search />
         <TwistButton />
       </div>
-      <h5>Recent Search</h5>
-      <div className={styles.cardsContainer}>
-        <SearchCard />
-        <SearchCard />
+      <div className={styles.results}>
+        <h5>Recent Search</h5>
+        <p>255 results</p>
       </div>
-      
+
+      {/* title,
+  creator,
+  rating,
+  src,
+  time,
+  widthI,
+  heightI, */}
+      <div className={styles.cardsContainer}>
+        {search.map((item) => (
+          <SearchCard
+            key={item.id}
+            title={item.title}
+            creator={item.creator}
+            rating={item.rating}
+            src={item.src}
+            widthI={150}
+            heightI={150}
+          />
+        ))}
+      </div>
     </main>
   );
 }

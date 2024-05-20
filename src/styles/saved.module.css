@@ -1,0 +1,14 @@
+.main {
+  width: 85%;
+  margin: auto;
+}
+.main h4 {
+  margin-top: 0.625rem;
+  margin-bottom: 1.25rem;
+  color: #121212;
+  text-align: center;
+}
+.recipes {
+  display: grid;
+  grid-gap: 1.25rem;
+}
