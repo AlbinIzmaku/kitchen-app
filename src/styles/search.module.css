@@ -1,30 +1,25 @@
-.input {
-  position: relative;
-  width: 100%;
-  height: 2.5rem;
+.main {
+  border: 1px solid blue;
+  width: 85%;
+  margin: auto;
 }
-.input input {
-  width: 100%;
-  height: 2.5rem;
-  background-color: var(--white);
-  border: 1.3px solid var(--gray4);
-  border-radius: 10px;
-  padding-left: 15%;
-  outline: none;
-  transition: 2s all linear;
+.text {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #181818;
 }
-.input input::placeholder {
-  font-weight: 400;
-  font-size: 11px;
-  color: var(--gray4);
+.searchContainer {
+  display: grid;
+  grid-template-columns: 80% auto;
+  justify-content: space-between;
+  align-items: center;
 }
-.input input:hover {
-  border: 1.3px solid var(--primary-100);
-}
-.input svg {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  left: 4%;
-  fill: red;
+.cardsContainer {
+  border: 1px solid blue;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  
 }

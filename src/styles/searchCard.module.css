@@ -1,0 +1,32 @@
+.card {
+  border: 1px solid red;
+  position: relative;
+  width: 9.375rem;
+  height: 9.375rem;
+  border-radius: 10px;
+}
+.rating {
+  width: 2.3125rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.1875rem;
+  align-items: center;
+  position: absolute;
+  top: 0.625rem;
+  right: 0.625rem;
+  background-color: var(--secondary-20);
+  border-radius: 1.25rem;
+}
+.foodTitle {
+  color: var(--white);
+  font-weight: 600;
+  position: absolute;
+  bottom: 1.5625rem;
+  left: 0.625rem;
+}
+.creator {
+  color: var(--gray3);
+  position: absolute;
+  bottom: 0.625rem;
+  left: 0.625rem;
+}

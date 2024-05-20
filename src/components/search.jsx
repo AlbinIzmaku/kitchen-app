@@ -1,5 +1,5 @@
 import SearchIcon from "@/svg/searchIcon";
-import styles from "@/styles/search.module.css";
+import styles from "@/styles/searchComponent.module.css";
 
 export default function Search() {
   return (

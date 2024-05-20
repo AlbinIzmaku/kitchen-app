@@ -1,4 +1,3 @@
-import Search from "@/components/search";
 import TwistButton from "@/components/twistButton";
 import MenuButton from "@/components/menuButton";
 import menu from "@/data/menu";
@@ -6,13 +5,13 @@ import dishes from "@/data/mainDishes";
 import MainDish from "@/components/mainDish";
 import recipes from "@/data/newRecipes";
 import NewRecipe from "@/components/newRecipe";
-import styles from "@/styles/home.module.css";
 import HomeIcon from "@/svg/homeIcon";
 import BookMarkIcon from "@/svg/bookMarkIcon";
 import NotificationIcon from "@/svg/notificationIcon";
 import ProfileIcon from "@/svg/profileIcon";
-import Nav from "@/components/nav";
 import PlusIcon from "@/svg/plusIcon";
+import styles from "@/styles/home.module.css";
+import Search from "@/components/search";
 
 export default function HomePage() {
   return (
@@ -30,6 +29,7 @@ export default function HomePage() {
         <Search />
         <TwistButton />
       </div>
+
       <div className={styles.menuContainer}>
         {menu.map((item, i) => (
           <MenuButton key={i} item={item} />

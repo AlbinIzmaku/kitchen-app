@@ -1,0 +1,30 @@
+.input {
+  position: relative;
+  width: 100%;
+  height: 2.5rem;
+}
+.input input {
+  width: 100%;
+  height: 2.5rem;
+  background-color: var(--white);
+  border: 1.3px solid var(--gray4);
+  border-radius: 10px;
+  padding-left: 15%;
+  outline: none;
+  transition: 2s all linear;
+}
+.input input::placeholder {
+  font-weight: 400;
+  font-size: 11px;
+  color: var(--gray4);
+}
+.input input:hover {
+  border: 1.3px solid var(--primary-100);
+}
+.input svg {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 4%;
+  fill: red;
+}

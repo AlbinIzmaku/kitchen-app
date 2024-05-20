@@ -4,7 +4,6 @@ import Button from "@/components/button";
 import FacebookIcon from "@/svg/facebookIcon";
 import GoogleIcon from "@/svg/googleIcon";
 import styles from "@/styles/sign-in.module.css";
-import Image from "next/image";
 
 export default function SignIn() {
   return (
