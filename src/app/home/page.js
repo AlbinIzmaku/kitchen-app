@@ -12,6 +12,7 @@ import ProfileIcon from "@/svg/profileIcon";
 import PlusIcon from "@/svg/plusIcon";
 import styles from "@/styles/home.module.css";
 import Search from "@/components/search";
+import Nav from "@/components/nav";
 
 export default function HomePage() {
   return (
@@ -58,17 +59,7 @@ export default function HomePage() {
           />
         ))}
       </div>
-      <nav className={styles.nav}>
-        <PlusIcon />
-        <div>
-          <HomeIcon />
-          <BookMarkIcon />
-        </div>
-        <div>
-          <NotificationIcon />
-          <ProfileIcon />
-        </div>
-      </nav>
+      <Nav />
     </main>
   );
 }
