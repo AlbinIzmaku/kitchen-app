@@ -8,14 +8,16 @@ import styles from "@/styles/nav.module.css";
 export default function Nav() {
   return (
     <nav className={styles.nav}>
-      <PlusIcon />
-      <div>
-        <HomeIcon />
-        <BookMarkIcon />
-      </div>
-      <div>
-        <NotificationIcon />
-        <ProfileIcon />
+      <div className={styles.container}>
+        <PlusIcon />
+        <div>
+          <HomeIcon />
+          <BookMarkIcon />
+        </div>
+        <div>
+          <NotificationIcon />
+          <ProfileIcon />
+        </div>
       </div>
     </nav>
   );

@@ -1,0 +1,63 @@
+.main {
+  width: 23.4375rem;
+  height: 30.25rem;
+  border-radius: 3.125rem 3.125rem 0 0;
+  padding: 1.875rem;
+}
+.main > div {
+  margin-top: 1.25rem;
+}
+.title {
+  text-align: center;
+}
+.time {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.timebuttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rate {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.rateButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.categoryButtons {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  row-gap: 0.625rem;
+}
+.buttonClass {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  width: 174px;
+  height: 37px;
+  padding: 10px 30px;
+  background-color: var(--primary-100);
+  border-radius: 10px;
+  font: 11px;
+  font-weight: 500;
+  color: var(--white);
+  border: none;
+  transition: all 1s ease-in;
+}
+.button:active {
+  color: var(--primary-100);
+  background-color: var(--white);
+}

@@ -1,0 +1,24 @@
+.button {
+  padding: 5px 10px;
+
+  border-radius: 10px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  color: var(--primary-100);
+  background-color: var(--white);
+  border: 1px solid var(--primary-100);
+  column-gap: 5px;
+}
+.button:active {
+  color: var(--white);
+  background-color: var(--primary-100);
+}
+.button svg path {
+  fill: var(--primary-100) !important;
+}

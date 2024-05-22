@@ -5,18 +5,13 @@ import dishes from "@/data/mainDishes";
 import MainDish from "@/components/mainDish";
 import recipes from "@/data/newRecipes";
 import NewRecipe from "@/components/newRecipe";
-import HomeIcon from "@/svg/homeIcon";
-import BookMarkIcon from "@/svg/bookMarkIcon";
-import NotificationIcon from "@/svg/notificationIcon";
-import ProfileIcon from "@/svg/profileIcon";
-import PlusIcon from "@/svg/plusIcon";
-import styles from "@/styles/home.module.css";
 import Search from "@/components/search";
+import styles from "@/styles/home.module.css";
 import Nav from "@/components/nav";
 
 export default function HomePage() {
   return (
-    <main className={styles.menu}>
+    <section className={styles.main}>
       <div className={styles.mainText}>
         <div>
           <h3>Hello Jega</h3>
@@ -59,7 +54,6 @@ export default function HomePage() {
           />
         ))}
       </div>
-      <Nav />
-    </main>
+    </section>
   );
 }

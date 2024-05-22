@@ -4,16 +4,17 @@ import styles from "@/styles/profile.module.css";
 import search from "@/data/search";
 import SearchCard from "@/components/searchCard";
 import savedImage from "/public/savedImage.png";
+import Nav from "@/components/nav";
 
 export default function Profile() {
   return (
-    <main className={styles.main}>
+    <section className={styles.main}>
       <h4 className={styles.text}>Profile</h4>
       <div className={styles.icon}>
         <ThreeDots />
       </div>
 
-      <section className={styles.profile}>
+      <article className={styles.profile}>
         <div className={styles.profileImage}>
           <h1>A</h1>
         </div>
@@ -29,19 +30,19 @@ export default function Profile() {
           <p>Following</p>
           <h3>259</h3>
         </div>
-      </section>
-      <section className={styles.bio}>
+      </article>
+      <article className={styles.bio}>
         <h5>Afuwape Abiodun</h5>
         <p>Chef</p>
         <p>Private Chef Passionate about food and life.</p>
-      </section>
+      </article>
       <div className={styles.link}>
         <Link href="/notification">Recipe</Link>
         <Link href="/">Videos</Link>
         <Link href="/">Tag</Link>
       </div>
 
-      <section className={styles.recipes}>
+      <article className={styles.recipes}>
         {search.map((item) => (
           <SearchCard
             key={item.id}
@@ -54,7 +55,7 @@ export default function Profile() {
             heightI={150}
           />
         ))}
-      </section>
-    </main>
+      </article>
+    </section>
   );
 }

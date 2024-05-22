@@ -1,11 +1,8 @@
 .main {
-  border: 1px solid blue;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  /* width: 85%;
-  margin: auto; */
   height: 100vh;
   overflow-y: hidden;
 }

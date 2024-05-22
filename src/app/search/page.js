@@ -12,22 +12,17 @@ export default function SearchPage() {
         <LeftArrow />
         <h4>Search recipes</h4>
       </div>
+
       <div className={styles.searchContainer}>
         <Search />
         <TwistButton />
       </div>
+
       <div className={styles.results}>
         <h5>Recent Search</h5>
         <p>255 results</p>
       </div>
 
-      {/* title,
-  creator,
-  rating,
-  src,
-  time,
-  widthI,
-  heightI, */}
       <div className={styles.cardsContainer}>
         {search.map((item) => (
           <SearchCard
