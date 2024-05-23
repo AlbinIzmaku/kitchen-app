@@ -2,7 +2,7 @@
   border: 1px solid blue;
   width: 100vw;
   height: 100vh;
-  overflow-y: hidden;
+  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
 }
@@ -39,9 +39,10 @@
   text-align: center;
 }
 .article {
+  height: 84%;
   width: 86%;
   margin: auto;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 .cards {
   display: grid;

@@ -3,7 +3,7 @@ import all from "@/data/all";
 import NotificationCard from "@/components/notificationCard";
 import styles from "@/styles/notification.module.css";
 
-export default function Notification() {
+export default function Unread() {
   return (
     <article className={styles.article}>
       <div className={styles.cards}>

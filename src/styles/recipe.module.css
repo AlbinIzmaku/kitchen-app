@@ -1,0 +1,159 @@
+.main {
+  width: 85%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  overflow: hidden;
+}
+.icons {
+  margin-top: 0.625rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* card */
+.card {
+  margin-top: 0.625rem;
+  width: 19.6875rem;
+  height: 12.5625rem;
+}
+.imageContainer {
+  position: relative;
+}
+.rating {
+  width: 2.3125rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.1875rem;
+  align-items: center;
+  position: absolute;
+  top: 0.625rem;
+  right: 0.625rem;
+  background-color: var(--secondary-20);
+  border-radius: 1.25rem;
+}
+.timeBook {
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  align-items: center;
+  position: absolute;
+  bottom: 0.625rem;
+  right: 0.625rem;
+}
+.time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 3.75rem;
+  color: var(--gray1);
+}
+.time svg path {
+  fill: var(--gray1);
+}
+.book {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--white);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description {
+  display: flex;
+  align-items: center;
+  gap: 1.125rem;
+}
+.description p {
+  width: 5.8125rem;
+  height: 1.25rem;
+  color: var(--gray3);
+}
+
+/* Creator */
+
+.creatorProfile {
+  display: flex;
+  justify-content: space-between;
+}
+.creator {
+  width: 9.0625rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--primary-100);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info > p {
+  font-weight: 600;
+  color: #121212;
+}
+.location {
+  display: flex;
+  color: var(--gray3);
+}
+.button {
+  width: 5.3125rem;
+  height: 2.3125rem;
+  padding: 0.625rem 1.875rem;
+  background-color: var(--primary-100);
+  border-radius: 0.625rem;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.secondButton {
+  width: 9.375rem;
+  height: 2.0625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  background-color: var(--primary-100);
+  border-radius: 10px;
+  font-weight: 600;
+  color: var(--white);
+  border: none;
+}
+.secondButton:active {
+  background-color: var(--white);
+  color: var(--primary-100);
+}
+.serveItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--gray3);
+}
+.serveIcon {
+  display: flex;
+  gap: 0.3125rem;
+  align-items: center;
+}
+
+/* another card */
+.ingridents {
+  display: grid;
+  gap: 0.625rem;
+  overflow-y: auto;
+}
