@@ -39,3 +39,7 @@
   left: 50%;
   transform: translate(-50%);
 }
+.buttonClass button a {
+  text-decoration: none;
+  color: var(--white);
+}

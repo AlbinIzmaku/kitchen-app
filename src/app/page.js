@@ -1,9 +1,9 @@
 import Image from "next/image";
 import backgroundImage from "/public/backgroundImage.png";
 import hatImage from "/public/hatImage.png";
-import rightArrow from "/public/rightArrow.svg";
 import styles from "@/styles/page.module.css";
 import Button from "@/components/button";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
         <p>Simple way to find Tasty recipe</p>
       </div>
       <div className={styles.buttonClass}>
-        <Button>Start Cooking</Button>
+        <Button><Link href='/sign-in'>Start Cooking</Link></Button>
       </div>
     </main>
   );
