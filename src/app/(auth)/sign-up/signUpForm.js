@@ -6,7 +6,7 @@ import styles from "@/styles/sign-up.module.css";
 export default function SignUpForm() {
   async function signUpActions(formData) {
     "use server";
-    
+    const name = formData.get("name");
     console.log(formData);
   }
 
