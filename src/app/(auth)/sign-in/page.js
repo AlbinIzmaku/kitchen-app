@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { signIn } from "next-auth/react";
 import FacebookIcon from "@/svg/facebookIcon";
 import GoogleIcon from "@/svg/googleIcon";
 import styles from "@/styles/sign-in.module.css";
@@ -16,7 +19,9 @@ export default function SignIn() {
         <span>Or Sign in With</span>
       </p>
       <div className={styles.icons}>
-        <GoogleIcon />
+        <Link href="/api/auth/signin">
+          <GoogleIcon />
+        </Link>
         <FacebookIcon />
       </div>
       <p className={styles.info}>

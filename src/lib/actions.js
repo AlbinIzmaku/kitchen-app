@@ -1,5 +1,5 @@
 "use server";
-import { validateEmail, validatePassword } from "../(auth)/signIn";
+import { validateEmail, validatePassword } from "../app/(auth)/signIn";
 
 export async function authenticate(prevState, formData) {
   let emailMessage = "";

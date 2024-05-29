@@ -1,3 +1,4 @@
+
 import TwistButton from "@/components/twistButton";
 import MenuButton from "@/components/menuButton";
 import menu from "@/data/menu";
@@ -9,12 +10,13 @@ import Search from "@/components/search";
 import styles from "@/styles/home.module.css";
 import Nav from "@/components/nav";
 
-export default function HomePage() {
+
+export default function HomePage({ session }) {
   return (
     <section className={styles.main}>
       <div className={styles.mainText}>
         <div>
-          <h3>Hello Jega</h3>
+          <h3>Hello, {session.user.email}</h3>
           <p>What are you cooking today?</p>
         </div>
         <div className={styles.avatar}>

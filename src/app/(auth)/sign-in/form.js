@@ -3,12 +3,15 @@
 import Button from "@/components/button";
 import Input from "@/components/input";
 import Link from "next/link";
-import { authenticate } from "@/app/lib/actions";
+import { authenticate } from "@/lib/actions";
 import { useFormState } from "react-dom";
+import { useSession, signIn } from "next-auth/react";
 import styles from "@/styles/sign-in.module.css";
 
 export default function Form() {
-  const [error, dispatch] = useFormState(authenticate, undefined);
+  const [error, dispatch] = useFormState(authenticate, '');
+  const session = useSession();
+  console.log(session)
 
   return (
     <form action={dispatch} className={styles.form}>
