@@ -20,11 +20,13 @@ export default function SignUp() {
         <span>Or Sign in With</span>
       </p>
       <div className={styles.icons}>
-        <GoogleIcon />
+        <Link href="/api/auth/signin">
+          <GoogleIcon />
+        </Link>
         <FacebookIcon />
       </div>
       <p className={styles.info}>
-        Already a member? <Link href="/">Sign In</Link>
+        Already a member? <Link href="/sign-in">Sign In</Link>
       </p>
     </main>
   );

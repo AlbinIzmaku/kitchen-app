@@ -27,7 +27,9 @@ export default function Home() {
         <p>Simple way to find Tasty recipe</p>
       </div>
       <div className={styles.buttonClass}>
-        <Button><Link href='/sign-in'>Start Cooking</Link></Button>
+        <Button>
+          <Link href="/sign-in">Start Cooking</Link>
+        </Button>
       </div>
     </main>
   );

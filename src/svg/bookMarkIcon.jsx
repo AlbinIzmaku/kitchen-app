@@ -1,3 +1,5 @@
+"use client";
+
 export default function BookMarkIcon() {
   return (
     <svg
@@ -6,6 +8,7 @@ export default function BookMarkIcon() {
       viewBox="0 0 16 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      style={{cursor: 'pointer'}}
     >
       <path
         fillRule="evenodd"

@@ -4,6 +4,7 @@ import NotificationIcon from "@/svg/notificationIcon";
 import PlusIcon from "@/svg/plusIcon";
 import ProfileIcon from "@/svg/profileIcon";
 import styles from "@/styles/nav.module.css";
+import Save from "@/svg/save";
 
 export default function Nav() {
   return (
@@ -12,7 +13,7 @@ export default function Nav() {
         <PlusIcon />
         <div>
           <HomeIcon />
-          <BookMarkIcon />
+          <Save />
         </div>
         <div>
           <NotificationIcon />

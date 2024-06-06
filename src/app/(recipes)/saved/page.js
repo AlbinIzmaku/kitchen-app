@@ -1,21 +1,31 @@
-import savedImage from "/public/savedImage.png";
+"use client";
+
 import SearchCard from "@/components/searchCard";
-import search from "@/data/search";
 import styles from "@/styles/saved.module.css";
+import { useEffect, useState } from "react";
 
 export default function Saved() {
+  const [savedRecipes, setSavedRecipes] = useState([]);
+
+  useEffect(() => {
+    const saved = localStorage.getItem("savedRecipes");
+    if (saved) {
+      setSavedRecipes(JSON.parse(saved));
+    }
+  }, []);
+
   return (
     <section className={styles.main}>
       <h4>Saved Page</h4>
       <div className={styles.recipes}>
-        {search.map((item) => (
+        {savedRecipes.map((item) => (
           <SearchCard
             key={item.id}
+            id={item.id}
             title={item.title}
-            creator={item.creator}
+            image={item.src}
+            time={item.minutes}
             rating={item.rating}
-            src={savedImage}
-            time={item.time}
             widthI={315}
             heightI={150}
           />

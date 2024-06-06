@@ -1,20 +1,19 @@
-"use client";
-
 import Link from "next/link";
-import { signIn } from "next-auth/react";
 import FacebookIcon from "@/svg/facebookIcon";
 import GoogleIcon from "@/svg/googleIcon";
 import styles from "@/styles/sign-in.module.css";
 import Form from "./form";
+import { auth } from "@/auth";
 
-export default function SignIn() {
+export default async function SignIn() {
+  const session = await auth();
   return (
     <main className={styles.main}>
       <div className={styles.hello}>
         <h2>Hello,</h2>
         <h3 className="regular">Welcom Back!</h3>
       </div>
-      <Form />
+      <Form session={session} />
       <p className={styles.sideways}>
         <span>Or Sign in With</span>
       </p>
@@ -25,7 +24,7 @@ export default function SignIn() {
         <FacebookIcon />
       </div>
       <p className={styles.info}>
-        Do not have an account? <Link href="/">Sign up</Link>
+        Do not have an account? <Link href="/sign-up">Sign up</Link>
       </p>
     </main>
   );

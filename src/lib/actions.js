@@ -2,17 +2,23 @@
 import { validateEmail, validatePassword } from "../app/(auth)/signIn";
 
 export async function authenticate(prevState, formData) {
-  let emailMessage = "";
-  let passwordMessage = "";
   const email = formData.get("email");
-  if (!validateEmail(email)) {
-    emailMessage = "@ is missing";
-  }
   const password = formData.get("password");
 
-  if (!validatePassword(password)) {
-    passwordMessage = "Wrong password";
+  let errors = {
+    email: "",
+    password: "",
+  };
+
+  if (!validateEmail(email)) {
+    errors.email = "@ is missing";
   }
 
-  return [emailMessage, passwordMessage];
+  if (!validatePassword(password)) {
+    errors.password = "Wrong password";
+  }
+
+  return Object.fromEntries(
+    Object.entries(errors).filter(([key, value]) => value)
+  );
 }

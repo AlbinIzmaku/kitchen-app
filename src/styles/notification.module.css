@@ -29,11 +29,11 @@
   align-items: center;
   transition: all 1.5s ease-in;
 }
-.link a:active {
+.active {
   background-color: var(--primary-100);
-  color: var(--white);
+  color: var(--white)!important;
+ 
 }
-
 .date {
   font-weight: bold;
   text-align: center;

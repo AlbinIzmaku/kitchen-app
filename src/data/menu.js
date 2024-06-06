@@ -1,14 +1,15 @@
 const menu = [
   "All",
-  "Indian",
-  "Italian",
+  "African",
   "Asian",
+  "American",
+  "European",
+  "Italian",
+  "Indian",
+  "Mexican",
   "Chinese",
-  "Fruit",
-  "Vegatables",
-  "Protein",
-  "Cereal",
-  "Local\bDishes",
+  "French",
+  "Greek",
 ];
 
 export default menu;
