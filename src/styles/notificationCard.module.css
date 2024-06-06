@@ -1,0 +1,23 @@
+.card {
+  position: relative;
+  width: 19.6875rem;
+  height: 5.75rem;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  padding: 0.625rem 1rem;
+  display: grid;
+  gap: 0.3125rem;
+  color: var(--gray3);
+}
+.card p:first-child {
+  font-weight: bold;
+  color: #121212;
+}
+.card p:nth-child(3) {
+  font-size: 0.4375rem;
+}
+.icon {
+  position: absolute;
+  top: 0.625rem;
+  right: 1rem;
+}

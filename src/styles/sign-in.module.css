@@ -1,0 +1,43 @@
+.main {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  gap: 3rem;
+}
+.hello {
+  margin-top: 3.125rem;
+}
+.form {
+  display: grid;
+  gap: 1rem;
+}
+.form a {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--secondary-80);
+  text-decoration: none;
+}
+.sideways {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid var(--black);
+  line-height: 0.1em;
+}
+.sideways span {
+  background-color: var(--white);
+  padding: 0 10px;
+  font-size: 13px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.info {
+  text-align: center;
+}
+.info a {
+  color: var(--secondary-100);
+  text-decoration: none;
+}

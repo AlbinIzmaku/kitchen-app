@@ -1,0 +1,45 @@
+.main {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.25rem;
+}
+.create > h3 {
+  color: var(--black);
+}
+.form {
+  display: grid;
+  gap: 1rem;
+}
+.form .terms {
+  color: var(--secondary-100);
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  accent-color: var(--secondary-100);
+}
+.sideways {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid var(--black);
+  line-height: 0.1em;
+}
+.sideways span {
+  background-color: var(--white);
+  padding: 0 10px;
+  font-size: 13px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.info {
+  text-align: center;
+}
+.info a {
+  color: var(--secondary-100);
+  text-decoration: none;
+}

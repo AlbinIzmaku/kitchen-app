@@ -1,0 +1,10 @@
+.icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  background-color: var(--white);
+  box-shadow: 0px 0px 5px 3px rgba(105, 105, 105, 0.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

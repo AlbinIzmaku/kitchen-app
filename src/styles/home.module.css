@@ -1,0 +1,63 @@
+.main {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mainText {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 7.5%;
+}
+.mainText p {
+  color: var(--gray3);
+}
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--secondary-40);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchContainer {
+  width: 85%;
+  display: grid;
+  grid-template-columns: 80% auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 7.5%;
+}
+.menuContainer {
+  height: 3.1875rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  margin-left: 7.5%;
+}
+.mainDishes {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+  overflow-x: auto;
+  margin-left: 7.5%;
+}
+
+.text {
+  margin-left: 7.5%;
+}
+
+.recipes {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  margin-left: 7.5%;
+}
