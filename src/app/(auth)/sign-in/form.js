@@ -10,14 +10,13 @@ import { redirect } from "next/navigation";
 
 export default function Form({ session }) {
   const [error, dispatch] = useFormState(authenticate, undefined);
-  const name = session.user.name;
+  // const name = session.user.name;
 
   useEffect(() => {
     if (error && Object.keys(error).length === 0) {
-      alert(`Welcome ${name}`);
       redirect("/home");
     }
-  }, [error, name]);
+  }, [error]);
 
   return (
     <form action={dispatch} className={styles.form}>
