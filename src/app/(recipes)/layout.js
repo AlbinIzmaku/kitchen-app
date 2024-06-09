@@ -6,7 +6,6 @@ export default function RecipesLayout({ children }) {
   return (
     <main className={styles.main}>
       <SessionProvider>{children}</SessionProvider>
-
       <Nav />
     </main>
   );

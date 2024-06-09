@@ -1,11 +1,28 @@
+'use client'
+
 import Image from "next/image";
 import backgroundImage from "/public/backgroundImage.png";
 import hatImage from "/public/hatImage.png";
 import styles from "@/styles/page.module.css";
 import Button from "@/components/button";
 import Link from "next/link";
+import { isEmbeddedBrowser } from "@/utils/dectectEmbeddedBrowser";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [isEmbedded, setIsEmbedded] = useState(false);
+
+  useEffect(() => {
+    if (isEmbeddedBrowser()) {
+      setIsEmbedded(true);
+    }
+  }, []);
+  if (isEmbedded) {
+    <p>
+      Please open this link in a standard browser (Chrome, Safari, Firefox,
+      Edge) for authentication.
+    </p>;
+  }
   return (
     <main className={styles.main}>
       <Image
