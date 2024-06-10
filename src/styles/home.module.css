@@ -1,7 +1,9 @@
 .main {
   overflow-x: hidden;
+  overflow-y: auto;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
+  height: calc(100dvh - 5.875rem);
   display: flex;
   flex-direction: column;
   justify-content: space-between;

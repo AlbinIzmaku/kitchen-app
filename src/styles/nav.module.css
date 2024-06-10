@@ -1,8 +1,8 @@
 .nav {
   position: fixed;
-  bottom: 1%;
+  bottom: 1vh;
   width: 100%;
-  z-index: 1000;
+  height: 5.875rem;
 }
 .container {
   position: relative;
