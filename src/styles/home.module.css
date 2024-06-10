@@ -14,6 +14,7 @@
   justify-content: space-between;
   align-items: center;
   margin-left: 7.5%;
+  border: 1px solid red;
 }
 .mainText p {
   color: var(--gray3);
