@@ -5,10 +5,8 @@ import styles from "@/styles/search.module.css";
 import TwistButton from "@/components/twistButton";
 import Search from "@/components/search";
 import SearchCard from "@/components/searchCard";
-import search from "@/data/search";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-// import { fetchRecipes } from "@/utils/spoonacular";
 
 export default function SearchPage() {
   const [recipes, setRecipes] = useState([]);
@@ -24,7 +22,7 @@ export default function SearchPage() {
           ...recipe,
           rating: Math.floor(Math.random() * 5) + 1,
         }));
-        
+
         setRecipes(recipesWithRatings);
       } catch (error) {
         console.error("Error fetching recipes", error);

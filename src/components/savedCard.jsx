@@ -6,7 +6,7 @@ import styles from "@/styles/searchCard.module.css";
 import TimeIcon from "@/svg/timeIcon";
 import BookMarkIcon from "@/svg/bookMarkIcon";
 
-export default function SearchCard({
+export default function SavedCard({
   id,
   title,
   image,
@@ -14,9 +14,15 @@ export default function SearchCard({
   rating,
   widthI,
   heightI,
+  handleClick,
 }) {
+  console.log("hello");
   return (
-    <div className={styles.card}>
+    <div
+      className={styles.card}
+      onClick={handleClick}
+      style={{ cursor: "pointer" }}
+    >
       <div
         style={{
           width: widthI,

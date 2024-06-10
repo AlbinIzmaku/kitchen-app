@@ -11,48 +11,52 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const [isEmbedded, setIsEmbedded] = useState(false);
+
   useEffect(() => {
     if (isEmbeddedBrowser()) {
       setIsEmbedded(true);
+      alert("Please open this link with standard browser");
     }
   }, []);
 
-  return (
-    <main className={styles.main}>
-      {isEmbedded ? (
+  if (isEmbedded) {
+    return (
+      <main className={styles.main}>
         <div className={styles.embeddedMessage}>
           <p>
             Please open this link in a standard browser (Chrome, Safari,
             Firefox, Edge) for authentication.
           </p>
         </div>
-      ) : (
-        <>
-          <Image
-            src={backgroundImage}
-            alt="Background Image"
-            fill
-            quality={100}
-            sizes="100vw"
-            style={{
-              objectFit: "cover",
-            }}
-          />
-          <div className={styles.chefHat}>
-            <Image src={hatImage} alt="Chef Hat " />
-            <h4>100K+ Premium Recipe</h4>
-          </div>
-          <div className={styles.getCooking}>
-            <h1>Get Cooking</h1>
-            <p>Simple way to find Tasty recipe</p>
-          </div>
-          <div className={styles.buttonClass}>
-            <Button>
-              <Link href="/sign-in">Start Cooking</Link>
-            </Button>
-          </div>
-        </>
-      )}
+      </main>
+    );
+  }
+
+  return (
+    <main className={styles.main}>
+      <Image
+        src={backgroundImage}
+        alt="Background Image"
+        fill
+        quality={100}
+        sizes="100vw"
+        style={{
+          objectFit: "cover",
+        }}
+      />
+      <div className={styles.chefHat}>
+        <Image src={hatImage} alt="Chef Hat " />
+        <h4>100K+ Premium Recipe</h4>
+      </div>
+      <div className={styles.getCooking}>
+        <h1>Get Cooking</h1>
+        <p>Simple way to find Tasty recipe</p>
+      </div>
+      <div className={styles.buttonClass}>
+        <Button>
+          <Link href="/sign-in">Start Cooking</Link>
+        </Button>
+      </div>
     </main>
   );
 }
