@@ -4,12 +4,4 @@
   position: relative;
   overflow-y: auto;
   display: flex;
-  /* grid-template-rows: 70dvh 5.875rem; */
-  border: 1px solid red;
-
-}
-.main > section {
-  /* height: calc(100% - 4rem); */
-  border: 1px solid blue;
-  
 }

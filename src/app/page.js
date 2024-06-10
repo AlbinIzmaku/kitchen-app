@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import backgroundImage from "/public/backgroundImage.png";
@@ -10,19 +10,19 @@ import { isEmbeddedBrowser } from "@/utils/dectectEmbeddedBrowser";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  // const [isEmbedded, setIsEmbedded] = useState(false);
+  const [isEmbedded, setIsEmbedded] = useState(false);
+  useEffect(() => {
+    if (isEmbeddedBrowser()) {
+      setIsEmbedded(true);
+    }
+  }, []);
+  if (isEmbedded) {
+    <p>
+      Please open this link in a standard browser (Chrome, Safari, Firefox,
+      Edge) for authentication.
+    </p>;
+  }
 
-  // useEffect(() => {
-  //   if (isEmbeddedBrowser()) {
-  //     setIsEmbedded(true);
-  //   }
-  // }, []);
-  // if (isEmbedded) {
-  //   <p>
-  //     Please open this link in a standard browser (Chrome, Safari, Firefox,
-  //     Edge) for authentication.
-  //   </p>;
-  // }
   return (
     <main className={styles.main}>
       <Image
