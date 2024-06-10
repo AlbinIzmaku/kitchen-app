@@ -16,12 +16,6 @@ export default function Home() {
       setIsEmbedded(true);
     }
   }, []);
-  if (isEmbedded) {
-    <p>
-      Please open this link in a standard browser (Chrome, Safari, Firefox,
-      Edge) for authentication.
-    </p>;
-  }
 
   return (
     <main className={styles.main}>
