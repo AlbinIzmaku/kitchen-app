@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Recipe Explorer
 
-## Getting Started
+Welcome to Recipe Explorer! This project is a comprehensive kitchen recipe web application built using modern web technologies.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Project Overview](#project-overview)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Future Updates](#future-updates)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Overview
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Recipe Explorer is a dynamic web application designed to enhance my front-end development skills and provide a platform to search, filter, and save kitchen recipes from around the world. The app allows users to filter recipes by state or continent, search for specific recipes dynamically, and view detailed information about each recipe. It integrates with the Spoonacular API to fetch a vast array of recipes.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologies Used
 
-## Learn More
+- **Next.js**: Version 14
+- **React**: Version 18
+- **Next-Auth**: Version 5
+- **Spoonacular API**: For fetching recipes
+- **Authentication**: Google provider via Next-Auth
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Global Recipe Search**: Search for recipes from all around the world.
+- **Filtering**: Filter recipes based on state or continent.
+- **Dynamic Search**: Search for recipes dynamically as you type.
+- **Save Recipes**: Save your favorite recipes for easy access.
+- **Recipe Details**: View detailed information about each recipe.
+- **Authentication**: Secure authentication using Google provider via Next-Auth.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Future Updates
 
-## Deploy on Vercel
+Version 1 is currently live. In upcoming updates, the following features will be added:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Inclusion of Albanian cuisine recipes.
+- Improved user experience (UX) and user interface (UI).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Installation
+
+To run this project locally, follow these steps:
+
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/AlbinIzmaku/kitchen-app.git
+    ```
+2. **Navigate to the project directory**:
+    ```bash
+    cd kitchen-app
+    ```
+3. **Install dependencies**:
+    ```bash
+    npm install
+    ```
+4. **Create a `.env.local` file and add your environment variables** (e.g., Spoonacular API key, Next-Auth secret, Google provider client ID and secret).
+
+5. **Run the development server**:
+    ```bash
+    npm run dev
+    ```
+
+## Usage
+
+1. Open your browser and navigate to `http://localhost:3000`.
+2. Search for recipes from various cuisines around the world.
+3. Use the filters to narrow down your search results.
+4. Save your favorite recipes for easy access.
+5. Sign in using your Google account to unlock all features.
+
+For a live demo, visit: [Recipe Explorer](https://kitchen-app-silk.vercel.app/)
+
+## Credits
+
+- **Design**: Credits to JEGA_JNR for the design inspiration.
+
+---
